@@ -21,6 +21,11 @@ Welcome to the Rock-Paper-Scissors Game! This is a simple implementation of the 
         - Scissors cuts Paper
         - Paper covers Rock
 
+## Autoplay Feature
+
+This game now includes an autoplay feature! The game will automatically play a round at regular intervals, allowing you to watch the outcomes without manually making choices.
+
 ## Requirements
 
 - A modern web browser that supports JavaScript.
+
