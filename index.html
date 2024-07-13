@@ -1,42 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock-Paper-Scissor</title>
+    <title>Rock-Paper-Scissors</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
-
+    <script defer src="index.js"></script>
 </head>
-
 <body>
     <div>
         <p class="title">Rock Paper Scissors</p>
-        <button onclick="
-            playGame('rock')
-            " class="move-button"><img src="images/rock-emoji.png" class="move-icon"></button>
-        <button onclick="
-            playGame('paper');
-            " class="move-button"><img src="images/paper-emoji.png" class="move-icon"></button>
-        <button onclick="
-            playGame('scissor');
-            " class="move-button"><img src="images/scissor-emoji.png" class="move-icon"></button>
+        <button class="move-button js-rock-button"><img src="images/rock-emoji.png" class="move-icon"></button>
+        <button class="move-button js-paper-button"><img src="images/paper-emoji.png" class="move-icon"></button>
+        <button class="move-button js-scissor-button"><img src="images/scissor-emoji.png" class="move-icon"></button>
 
         <p class="js-result"></p>
-        <p class="js-moves">
-        </p>
-
+        <p class="js-moves"></p>
         <p class="js-score"></p>
 
-        <button onclick="
-            score = { win: 0, loss: 0, tie: 0 };
-            localStorage.removeItem('score');
-            updateScoreDisplay();
-            " class="reset-button">reset score</button>
-
-        <button class="autoPlay-button" onclick="autoPlay();">Auto Play</button>
+        <button class="reset-button">Reset Score</button>
+        <button class="autoPlay-button">Auto Play</button>
     </div>
 </body>
-
 </html>
