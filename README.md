@@ -22,7 +22,14 @@ Play the game in your preferred web browser by navigating to:
 
 ## Autoplay Feature
 
-This game includes an autoplay feature! The game will automatically play a round at regular intervals, allowing you to watch the outcomes without manually making choices.
+This game includes an autoplay feature! The game will automatically play a round at regular intervals, allowing you to watch the outcomes without manually making choices. You can start autoplay by pressing a designated key.
+- Press `a` for auto play
+
+## Reset Score
+
+- A new feature allows you to reset the score.
+- A div element will appear, asking if you want to reset the score with yes or no buttons.
+- Press `/` to reset the score.
 
 ## Requirements
 
