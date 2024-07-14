@@ -4,28 +4,28 @@ Welcome to the Rock-Paper-Scissors Game! This is a simple implementation of the 
 
 ## How to Play
 
-1. **Clone the Repository**:
-    ```bash
-    git clone https://github.com/Anshgrover23/Rock-Paper-Scissors-Game.git
-    cd Rock-Paper-Scissors-Game
-    ```
+Play the game in your preferred web browser by navigating to:
+[Rock-Paper-Scissors Game](https://anshgrover23.github.io/Rock-Paper-Scissors-Game/)
 
-2. **Run the Game**:
-    - Open the `index.html` file in your preferred web browser.
+## Gameplay
 
-3. **Gameplay**:
-    - The game will prompt you to choose Rock, Paper, or Scissors.
-    - The computer will also make a choice.
-    - The winner is determined by the following rules:
-        - Rock crushes Scissors
-        - Scissors cuts Paper
-        - Paper covers Rock
+- The game will prompt you to choose Rock, Paper, or Scissors.
+- You can now play using your keyboard:
+    - Press `r` for Rock
+    - Press `p` for Paper
+    - Press `s` for Scissors
+- The computer will also make a choice.
+- The winner is determined by the following rules:
+    - Rock crushes Scissors
+    - Scissors cuts Paper
+    - Paper covers Rock
 
 ## Autoplay Feature
 
-This game now includes an autoplay feature! The game will automatically play a round at regular intervals, allowing you to watch the outcomes without manually making choices.
+This game includes an autoplay feature! The game will automatically play a round at regular intervals, allowing you to watch the outcomes without manually making choices.
 
 ## Requirements
 
 - A modern web browser that supports JavaScript.
 
+Enjoy playing Rock-Paper-Scissors!
