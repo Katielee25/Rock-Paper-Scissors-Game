@@ -48,9 +48,18 @@ document.querySelector('.js-scissor-button').addEventListener('click', () => {
 });
 
 document.querySelector('.reset-button').addEventListener('click', () => {
-    score = { win: 0, loss: 0, tie: 0 };
-    localStorage.removeItem('score');
-    updateScoreDisplay();
+    document.querySelector('.ask-reset-score').innerHTML = `
+    <p>Are you sure you want to reset the score?</p><button class="yes-button">Yes</button><button class="no-button">No</button>
+    `;
+    document.querySelector('.yes-button').addEventListener('click', () => {
+        document.querySelector('.ask-reset-score').innerHTML = '';
+        score = { win: 0, loss: 0, tie: 0 };
+        localStorage.removeItem('score');
+        updateScoreDisplay();
+    });
+    document.querySelector('.no-button').addEventListener('click', () => {
+        document.querySelector('.ask-reset-score').innerHTML = '';
+    });
 });
 
 document.querySelector('.autoPlay-button').addEventListener('click', autoPlay);
@@ -65,9 +74,19 @@ document.body.addEventListener('keydown', (event) => {
     } else if (event.key === 'a') {
         autoPlay();
     } else if (event.key === '/') {
-        score = { win: 0, loss: 0, tie: 0 };
-        localStorage.removeItem('score');
-        updateScoreDisplay();
+        document.querySelector('.ask-reset-score').innerHTML = `
+    <p>Are you sure you want to reset the score?</p><button class="yes-button">Yes</button><button class="no-button">No</button>
+    `;
+        let yesElement = document.querySelector('.yes-button');
+        yesElement.addEventListener('click', () => {
+            document.querySelector('.ask-reset-score').innerHTML = '';
+            score = { win: 0, loss: 0, tie: 0 };
+            localStorage.removeItem('score');
+            updateScoreDisplay();
+        });
+        document.querySelector('.no-button').addEventListener('click', () => {
+            document.querySelector('.ask-reset-score').innerHTML = '';
+        });
     }
 });
 

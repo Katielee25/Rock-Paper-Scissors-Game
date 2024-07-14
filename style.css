@@ -37,7 +37,7 @@ body {
 }
 
 .reset-button,
-.autoPlay-button {
+.autoPlay-button, .yes-button, .no-button {
     background-color: white;
     border: none;
     font-size: 15px;
@@ -46,5 +46,8 @@ body {
 }
 
 .autoPlay-button {
+    margin-left: 15px;
+}
+.no-button {
     margin-left: 15px;
 }
