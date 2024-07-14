@@ -55,6 +55,16 @@ document.querySelector('.reset-button').addEventListener('click', () => {
 
 document.querySelector('.autoPlay-button').addEventListener('click', autoPlay);
 
+document.body.addEventListener('keydown', (event) => {
+    if (event.key === 'r') {
+        playGame('rock');
+    }else if (event.key === 'p') {
+        playGame('paper');
+    }else if (event.key === 's') {
+        playGame('scissor');
+    }
+})
+
 function playGame(playerMove) {
     let result = '';
     const computerMove = pickComputerMove();
