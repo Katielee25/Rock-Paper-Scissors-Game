@@ -49,7 +49,7 @@ document.querySelector('.js-scissor-button').addEventListener('click', () => {
 
 document.querySelector('.reset-button').addEventListener('click', () => {
     document.querySelector('.ask-reset-score').innerHTML = `
-    <p>Are you sure you want to reset the score?</p><button class="yes-button">Yes</button><button class="no-button">No</button>
+    <p>Are you sure you want to reset the score?</p><div class="reset-options"><button class="yes-button">Yes</button>&nbsp;&nbsp;<button class="no-button">No</button></div>
     `;
     document.querySelector('.yes-button').addEventListener('click', () => {
         document.querySelector('.ask-reset-score').innerHTML = '';
@@ -75,7 +75,7 @@ document.body.addEventListener('keydown', (event) => {
         autoPlay();
     } else if (event.key === '/') {
         document.querySelector('.ask-reset-score').innerHTML = `
-    <p>Are you sure you want to reset the score?</p><button class="yes-button">Yes</button><button class="no-button">No</button>
+    <p>Are you sure you want to reset the score?</p><div class="reset-options"><button class="yes-button">Yes</button>&nbsp;&nbsp;<button class="no-button">No</button></div>
     `;
         let yesElement = document.querySelector('.yes-button');
         yesElement.addEventListener('click', () => {

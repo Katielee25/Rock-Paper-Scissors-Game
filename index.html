@@ -8,18 +8,22 @@
     <script defer src="index.js"></script>
 </head>
 <body>
-    <div>
+    <div class="game">
         <p class="title">Rock Paper Scissors</p>
-        <button class="move-button js-rock-button"><img src="images/rock-emoji.png" class="move-icon"></button>
-        <button class="move-button js-paper-button"><img src="images/paper-emoji.png" class="move-icon"></button>
-        <button class="move-button js-scissor-button"><img src="images/scissor-emoji.png" class="move-icon"></button>
-
+        <div class="buttons">
+            <button class="move-button js-rock-button"><img src="images/rock-emoji.png" class="move-icon"></button>
+            <button class="move-button js-paper-button"><img src="images/paper-emoji.png" class="move-icon"></button>
+            <button class="move-button js-scissor-button"><img src="images/scissor-emoji.png" class="move-icon"></button>
+        </div>
         <p class="js-result"></p>
         <p class="js-moves"></p>
         <p class="js-score"></p>
-
-        <button class="reset-button">Reset Score</button>
-        <button class="autoPlay-button">Auto Play</button>
+    </div>
+    <div class="options">
+        <div>
+            <button class="reset-button">Reset Score</button>
+            <button class="autoPlay-button">Auto Play</button>
+        </div>
         <div class="ask-reset-score"></div>
     </div>
 </body>
